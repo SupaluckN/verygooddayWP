@@ -3,6 +3,7 @@
 	"devDependencies": {
 		"@_tw/themejson": "^0.2.0",
 		"@_tw/typography": "^0.5.10",
+		"@alpinejs/collapse": "^3.13.5",
 		"@angular-eslint/template-parser": "^17.1.1",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"@tailwindcss/container-queries": "^0.1.1",

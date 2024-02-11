@@ -39,5 +39,6 @@
 @layer base {
     html {
         scroll-behavior: smooth;
+        
     }
 }

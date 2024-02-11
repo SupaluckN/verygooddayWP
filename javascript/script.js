@@ -9,20 +9,11 @@
  * https://esbuild.github.io/
  */
 
-import Alpine from 'alpinejs'
- 
-Alpine.data('notification', () => ({
-    visible: false,
-    message: "",
 
-    send() {
-        this.visible = true
-    },
 
-    dismiss() {
-        this.visible = false
-    }
-}))
+/* import Alpine from 'alpinejs';
+import collapse from '@alpinejs/collapse';
 
-window.Alpine = Alpine
-Alpine.start()
+Alpine.plugin(collapse);
+
+Alpine.start(); */

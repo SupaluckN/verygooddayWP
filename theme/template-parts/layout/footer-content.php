@@ -9,7 +9,7 @@
 
 ?>
 
-<footer id="colophon" class="bg-pink-300">
+<footer id="colophon" class="bg-gradient-to-r from-indigo-500 from-10% via-blue-500 via-30% to-indigo-500 to-90% text-zinc-300">
 
 	<div>
 		<p>
