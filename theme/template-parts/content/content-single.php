@@ -9,23 +9,27 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('my-12 mx-12'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class("mt-3 rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal"); ?>>
 
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	<header class="mx-auto">
+		<?php the_title( '<h1 class="text-gray-900 text-center font-bold text-4xl">', '</h1>' ); ?>
 
+		
+		
 		<?php if ( ! is_page() ) : ?>
-			<div class="entry-meta">
+			<div class="mx-auto py-5 text-sm font-regular text-gray-900 flex">
+				
 				<?php vgday5599_entry_meta(); ?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
 	
 
-	<?php vgday5599_post_thumbnail(); ?>
+	<?php the_post_thumbnail('large', array('class' => 'mx-auto py-4')); ?>
+	
 
-	<div <?php vgday5599_content_class( 'entry-content' ); ?>>
+
+	<div <?php vgday5599_content_class('mt-5 py-5 px-3'); ?>>
 		<?php
 		the_content(
 			sprintf(
@@ -51,8 +55,9 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php vgday5599_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	<hr class="mt-4 px-4">
 
+	<div class="mt-3 text-sm font-regular text-gray-900 flex">
+				<?php vgday5599_entry_meta(); ?>
+	</div><!-- .entry-meta -->
 </article><!-- #post-${ID} -->

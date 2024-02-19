@@ -40,5 +40,7 @@ $page_id = get_option( 'page_for_posts' );
 </div><!-- /.col -->
 </div><!-- /.row -->
 
+
+
 <?php
 get_footer();
